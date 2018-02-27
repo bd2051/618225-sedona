@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дмитрий Быков](https://up.htmlacademy.ru/htmlcss/20/user/618225).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова] (https://htmlacademy.ru/profile/ankhena).
 
 ---
 
