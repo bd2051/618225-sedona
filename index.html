@@ -112,7 +112,26 @@
     </footer>
     
     <section class="modal-motel-search">
-      <!-- здесь будет форма -->
+      <h2 class="hidden">Заполните форму поиска</h2>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="search-arival-date">Дата заезда:</label>
+          <input id="search-arival-date" name="search-arival-date" type="text" value="24 апреля 2017" placeholder="число месяц год">
+          <button class="hidden">открыть календарь</button>
+        </p>
+        <p>
+          <label for="search-departure-date">Дата выезда:</label>
+          <input id="search-departure-date" name="search-departure-date" type="text" value="4 июля 2017" placeholder="число месяц год">
+          <button class="hidden">открыть календарь</button>
+        </p>
+        <p>
+          <label for="search-persons">Взрослые:</label>
+          <input id="search-persons" name="search-persons" type="number" value="2">
+          <label for="search-child">Дети:</label>
+          <input id="search-child" name="search-child" type="number" value="0">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
     </section>
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> -->
 
