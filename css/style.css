@@ -1,6 +1,6 @@
 .introduction{
     background-color: #59656f;
-  }
+}
   
 .filter-range{
     background-color: #59656f;
@@ -9,8 +9,7 @@
 	margin: 10px;
 	position: pelative;
 	padding: 1px;
-  }
-  
+}
 
 .filter-range-button-1{
     background: url("../img/filter-button.svg") no-repeat ;
@@ -21,8 +20,8 @@
 	z-index: 1;
 	position: absolute;
 	left: 40px;
-  }
-  
+}
+
 .filter-range-button-2{
     background: url("../img/filter-button.svg") no-repeat ;
     height: 20px;
@@ -32,6 +31,22 @@
 	z-index: 1;
 	position: absolute;
     left: 288px;
-  }
+}
+
+.filter-output-button-1{
+	background: url("../img/icon-up-dir.svg") no-repeat ;
+    height: 11px;
+    width: 10px;
+    cursor: pointer;
+    border-style: none;
+}
+
+.filter-output-button-2{
+	background: url("../img/icon-down-dir.svg") no-repeat ;
+    height: 11px;
+    width: 10px;
+    cursor: pointer;
+    border-style: none;
+}
 
 
