@@ -5,10 +5,10 @@
 .filter-range{
     background-color: #59656f;
     width: 317px;
-	height: 20px;
-	margin: 10px;
-	position: pelative;
-	padding: 1px;
+    height: 20px;
+    margin: 10px;
+    position: pelative;
+    padding: 1px;
 }
 
 .filter-range-button-1{
@@ -17,9 +17,9 @@
     width: 20px;
     cursor: pointer;
     border-style: none;
-	z-index: 1;
-	position: absolute;
-	left: 40px;
+    z-index: 1;
+    position: absolute;
+    left: 40px;
 }
 
 .filter-range-button-2{
@@ -28,25 +28,51 @@
     width: 20px;
     cursor: pointer;
     border-style: none;
-	z-index: 1;
-	position: absolute;
+    z-index: 1;
+    position: absolute;
     left: 288px;
 }
 
-.filter-output-button-1{
-	background: url("../img/icon-up-dir.svg") no-repeat ;
+.filter-output-button{
+    background: none;
+    border-style: none;
+    height: 12px;
+    width: 11px;
+    position: relative;
+/*  background: url("../img/icon-up-dir.svg") no-repeat ;
     height: 11px;
     width: 10px;
     cursor: pointer;
-    border-style: none;
+    border-style: none; */
 }
 
-.filter-output-button-2{
-	background: url("../img/icon-down-dir.svg") no-repeat ;
-    height: 11px;
-    width: 10px;
-    cursor: pointer;
-    border-style: none;
+.filter-output-button svg{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
+
+.filter-output-button svg path {
+
+    fill:inherit;
+}
+
+.filter-output-button-up{
+    fill: #cacaca;
+}
+
+.filter-output-button-down{
+    fill: #81b3d2;
+}
+
+.filter-output-button svg:hover{
+ 
+    fill: #231f20;
+}
+
+
 
 
