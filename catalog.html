@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -46,6 +47,14 @@
             <input id="moteles-filter-form-price-from" name="moteles-filter-form-price-from" type="text" value="0">
             <label for="moteles-filter-form-price-up-to" class="hidden">Цена до:</label>
             <input id="moteles-filter-form-price-up-to"" name="moteles-filter-form-price-up-to" type="text" value="3000">
+            <div class="filter-range">
+              <svg>
+                <rect width="317" height="2" x="10px" y="9px" fill="#ababab"/>
+                <rect width="248" height="2" x="20px" y="9px" fill="#ffffff"/>
+              </svg>
+              <button class="hidden filter-range-button-1" type="button" aria-label="ползунок влево"></button>
+              <button class="hidden filter-range-button-2" type="button" aria-label="ползунок вправо"></button>
+            </div>
           </fieldset>
           <button type="submit">Показать</button>
         </form>

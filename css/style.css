@@ -1,4 +1,37 @@
-.introduction
-  {
+.introduction{
     background-color: #59656f;
   }
+  
+.filter-range{
+    background-color: #59656f;
+    width: 317px;
+	height: 20px;
+	margin: 10px;
+	position: pelative;
+	padding: 1px;
+  }
+  
+
+.filter-range-button-1{
+    background: url("../img/filter-button.svg") no-repeat ;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-style: none;
+	z-index: 1;
+	position: absolute;
+	left: 40px;
+  }
+  
+.filter-range-button-2{
+    background: url("../img/filter-button.svg") no-repeat ;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    border-style: none;
+	z-index: 1;
+	position: absolute;
+    left: 288px;
+  }
+
+
