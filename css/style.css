@@ -217,6 +217,10 @@ a {
   background-color: #2d3f49;
 }
 
+.moteles-filter-form fieldset{
+  border:0;
+}
+
 .moteles-filter input[type="text"]{
   background: transparent;
   border: 0;
