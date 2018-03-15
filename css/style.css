@@ -1,9 +1,315 @@
-.introduction{
-    background-color: #59656f;
+/*Основные стили*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
 }
+
+
+
+a {
+  text-decoration: none;
+}
+
+.button-brown {
+  font: inherit;
+  
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.button-brown:hover,
+.button-brown:focus{
+  background-color: #604e43;
+}
+
+
+.button-brown:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3)
+} 
+
+
+.button-blue {
+  font: inherit;
+  
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-blue:hover,
+.button-blue:focus{
+  background-color: #669ec0;
+}
+
+
+.button-blue:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3)
+} 
+
+.button-transparent {
+  font: inherit;
+  
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+/*Главная страница Index*/
+
+/* Header */
+
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Main */
+
+.introduction{
+  background-color: #59656f;
+}
+
+.promo {
+  font-size: 21px;
+  line-height: 26px;
+/*   font-weight: 700; */
+}
+
+.features p:first-of-type{
+  line-height: 26px;
+}
+
+.features ul {
+    list-style: none;
+}
+
+.features li:first-child, .features li:nth-child(2){
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features h3{
+  font-size: 21px;
+}
+
+.advice ul {
+    list-style: none;
+}
+
+.advice h3{
+  font-size: 21px;
+}
+
+.motel-search b {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.motel-search p {
+  line-height: 24px;
+}
+
+.motel-search .button-brown {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/* Footer */
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-copyright {
+  line-height: 26px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #81b3d2;
+}
+
+/* Modal */
+.search-form {
+  font: inherit;
+  line-height: 26px;
+  font-weight: 700;
+  
+  background-color: #f2f2f2;
+}
+
+.search-form input{
+  font: inherit;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  background-color: #f2f2f2;
+}
+
+.modal-motel-search .button-blue{
+  font-size: 21px;
+  line-height: 26px;
+}
+
+
+/* Страница Магазин catalog.html ----------------*/
+
+/* Header */
+
+.site-navigation-current {
+  color: #766357;
+}
+
+/* Main */
+
+.moteles-filter-form {
+  font: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  
+  background-color: #2d3f49;
+}
+
+.moteles-filter input[type="text"]{
+  background: transparent;
+  border: 0;
+}
+
+.moteles-filter input[value]{
+  color: #ffffff;
+}
+
+
+.moteles-filter-form legend{
+  font-size: 16px;
+}
+
+.moteles-filter-form .button-transparent {/* Здесь будут ширина и высота кнопки */
+  
+}
+
+.filter-output > span:first-of-type {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.filter-sorting {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.filter-sorting a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #b3d1e4
+}
+
+.filter-sorting a:hover, .filter-sorting a:focus{
+  color: #81b3d2;
+  border-bottom: 1px dotted #b3d1e4
+}
+
+.filter-sorting a:active{
+  color: black;
+  border-bottom: 0;
+}
+
+.filter-sorting .sorting-current{
+  color: #81b3d2;
+  border-bottom: 0;
+}
+
+.filter-resualt {
+  list-style: none;
+}
+
+.filter-resualt h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.motel-name{
+  color: #000000;
+}
+
+.motel-name:hover,
+.motel-name:focus {
+  color: #81b3d2;
+}
+
+.motel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.motel-rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 .filter-range{
-    background-color: #59656f;
+    background-color: transparent;
     width: 317px;
     height: 20px;
     margin: 10px;
@@ -71,6 +377,11 @@
 .filter-output-button svg:hover{
  
     fill: #231f20;
+}
+
+.filter-output-button svg:active{
+ 
+    fill: #81b3d2;
 }
 
 

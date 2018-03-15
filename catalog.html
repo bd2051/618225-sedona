@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -27,7 +29,7 @@
       <h1 class="hidden">Поиск гостиницы</h1>
       
       <section class="moteles-filter">
-        <h2 class="hidden">Поиск гостиницы</h2>
+        <h2 class="hidden">Фильтр гостиницы</h2>
         <form class="moteles-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -43,9 +45,9 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <label for="moteles-filter-form-price-from" class="hidden">Цена от:</label>
+            <label for="moteles-filter-form-price-from" class="hidden">от</label>
             <input id="moteles-filter-form-price-from" name="moteles-filter-form-price-from" type="text" value="0">
-            <label for="moteles-filter-form-price-up-to" class="hidden">Цена до:</label>
+            <label for="moteles-filter-form-price-up-to" class="hidden">до</label>
             <input id="moteles-filter-form-price-up-to" name="moteles-filter-form-price-up-to" type="text" value="3000">
             <div class="filter-range">
               <svg>
@@ -56,21 +58,21 @@
               <button class="hidden filter-range-button-2" type="button" aria-label="ползунок вправо"></button>
             </div>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button-transparent" type="submit">Показать</button>
         </form>
       </section>
       
       <section class="filter-output">
         <h2 class="hidden">Результаты поиска гостиницы</h2>
         <span>Найдено: 3</span>
-        <p>
+        <p class="filter-sorting">
           <b>сортировка:</b>
-          <a>по цене</a>
+          <a class="sorting-current">по цене</a>
           <a href="#">по типу</a>
           <a href="#">по рейтингу</a>
         </p>
         <p>
-          <button class="hidden filter-output-button" type="button" aria-label="прорутка вверх">
+          <button class="hidden filter-output-button" type="button" aria-label="прорутка вверх"> <!-- сделать ссылку -->
             <svg class="filter-output-button-up" width="11" height="10" viewBox="0 0 11 10">
               <path  d="M5.5 0L0 10h11z"/>
             </svg>
@@ -81,50 +83,50 @@
             </svg>
           </button>
         </p>
-        <ul>
+        <ul class="filter-resualt">
           <li>
-            <h3>Amara Resort &amp; Spa</h3>
+            <h3><a class="motel-name" href="#">Amara Resort &amp; Spa</a></h3>
             <p>
               <img src="img/amara_resort_spa.jpg" width="134" height="90" alt="Amara Resort & Spa">
             </p>
             <p>
               <span>Гостиница от 4000 Р</span>
-              <a class="btn" href="#">Подробнее</a>
-              <a class="btn" href="#">Забронировать</a>
+              <a class="button-blue" href="#">Подробнее</a>
+              <a class="button-brown" href="#">Забронировать</a>
             </p>
             <p>
-              <span class="stars">4 звезды</span>
-              <span>Рейтинг:8,5</span>
+              <span class="motel-stars">4 звезды</span>
+              <span class="motel-rating">Рейтинг:8,5</span>
             </p>
           </li>
           <li>
-            <h3>Desert Quail Inn</h3>
+            <h3><a class="motel-name" href="#">Desert Quail Inn</a></h3>
             <p>
               <img src="img/desert_quail_inn.jpg" width="134" height="90" alt="Desert Quail Inn">
             </p>
             <p>
               <span>Гостиница от 3000 Р</span>
-              <a class="btn" href="#">Подробнее</a>
-              <a class="btn" href="#">Забронировать</a>
+              <a class="button-blue" href="#">Подробнее</a>
+              <a class="button-brown" href="#">Забронировать</a>
             </p>
             <p>
-              <span class="stars">3 звезды</span>
-              <span>Рейтинг:8,9</span>
+              <span class="motel-stars">3 звезды</span>
+              <span class="motel-rating">Рейтинг:8,9</span>
             </p>
           </li>
           <li>
-            <h3>Villas At Poco Diblo</h3>
+            <h3><a class="motel-name" href="#">Villas At Poco Diblo</a></h3>
             <p>
               <img src="img/villas_at_poco_diablo.jpg" width="134" height="90" alt="Villas At Poco Diblo">
             </p>
             <p>
               <span>Гостиница от 2000 Р</span>
-              <a class="btn" href="#">Подробнее</a>
-              <a class="btn" href="#">Забронировать</a>
+              <a class="button-blue" href="#">Подробнее</a>
+              <a class="button-brown" href="#">Забронировать</a>
             </p>
             <p>
-              <span class="stars">2 звезды</span>
-              <span>Рейтинг:9,2</span>
+              <span class="motel-stars">2 звезды</span>
+              <span class="motel-rating">Рейтинг:9,2</span>
             </p>
           </li>
         </ul>
@@ -141,7 +143,7 @@
         </ul>
       </div>
       <p class="footer-copyright">
-        <b>website by</b> 
+        website by 
         <a href="https://up.htmlacademy.ru/htmlcss/20">Html Academy</a>
       </p>
     </footer>
