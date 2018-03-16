@@ -330,6 +330,18 @@ a {
 
 /* Страница Магазин catalog.html ----------------*/
 
+
+.catalog-page {
+  min-width: 1200px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  box-shadow: 
+    -5px 0 15px rgba(0, 1, 1, 0.2),
+    5px 0 15px rgba(0, 1, 1, 0.2);
+}
+
 /* Header */
 
 .site-navigation-current {
@@ -345,7 +357,6 @@ a {
 
 .moteles-filter-form {
   font: inherit;
-  font-weight: 700;
   color: #ffffff;
   
   background-color: #2d3f49;
@@ -375,6 +386,7 @@ a {
 
 .moteles-filter-form legend{
   font-size: 16px;
+  font-weight: 700;
 }
 
 .moteles-filter-form .button-transparent {/* Здесь будут ширина и высота кнопки */
@@ -455,12 +467,12 @@ a {
 
   
 .filter-range{
-  background-color: green /* transparent */;
+  background-color: /* green */ transparent ;
   width: 317px;
   height: 20px;
   margin: 10px;
-  position: pelative;
   padding: 1px;
+  position: relative;
 }
 
 .filter-range svg {
@@ -469,8 +481,11 @@ a {
 
 .filter-range-button {
   display: flex;
-  height: 20px
+  height: 20px;
   
+  position: absolute;
+  top: 1px;
+  z-index: 1;
 }
 
 .filter-range-button-1{
@@ -478,10 +493,7 @@ a {
   width: 20px;
   cursor: pointer;
   border-style: none;
-  z-index: 1;
-  margin-top: -25px;
   margin-left: 10px;
-  margin-bottom: 25px;
 }
 
 .filter-range-button-2{
@@ -489,10 +501,7 @@ a {
   width: 20px;
   cursor: pointer;
   border-style: none;
-  z-index: 1;
-  margin-top: -25px;
   margin-left: 228px;
-  margin-bottom: 25px;
 }
 
 
