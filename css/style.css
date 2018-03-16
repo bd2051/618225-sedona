@@ -337,6 +337,11 @@ a {
 }
 
 /* Main */
+.moteles-filter {
+  padding: 0;
+  margin: 0;
+
+}
 
 .moteles-filter-form {
   font: inherit;
@@ -344,18 +349,26 @@ a {
   color: #ffffff;
   
   background-color: #2d3f49;
+  
+  display: flex;
+  min-height: 217px;
+  align-items: center;
+}
+
+.moteles-filter-form fieldset:nth-child(3){
+  margin-left: auto;
 }
 
 .moteles-filter-form fieldset{
   border:0;
 }
 
-.moteles-filter input[type="text"]{
+.moteles-filter-form input[type="text"]{
   background: transparent;
   border: 0;
 }
 
-.moteles-filter input[value]{
+.moteles-filter-form input[value]{
   color: #ffffff;
 }
 
@@ -372,6 +385,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  
 }
 
 .filter-sorting {
@@ -439,38 +453,48 @@ a {
 
 
 
-
   
 .filter-range{
-    background-color: transparent;
-    width: 317px;
-    height: 20px;
-    margin: 10px;
-    position: pelative;
-    padding: 1px;
+  background-color: green /* transparent */;
+  width: 317px;
+  height: 20px;
+  margin: 10px;
+  position: pelative;
+  padding: 1px;
+}
+
+.filter-range svg {
+  height: 20px
+}
+
+.filter-range-button {
+  display: flex;
+  height: 20px
+  
 }
 
 .filter-range-button-1{
-    background: url("../img/filter-button.svg") no-repeat ;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    border-style: none;
-    z-index: 1;
-    position: absolute;
-    left: 40px;
+  background: url("../img/filter-button.svg") no-repeat ;
+  width: 20px;
+  cursor: pointer;
+  border-style: none;
+  z-index: 1;
+  margin-top: -25px;
+  margin-left: 10px;
+  margin-bottom: 25px;
 }
 
 .filter-range-button-2{
-    background: url("../img/filter-button.svg") no-repeat ;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    border-style: none;
-    z-index: 1;
-    position: absolute;
-    left: 288px;
+  background: url("../img/filter-button.svg") no-repeat ;
+  width: 20px;
+  cursor: pointer;
+  border-style: none;
+  z-index: 1;
+  margin-top: -25px;
+  margin-left: 228px;
+  margin-bottom: 25px;
 }
+
 
 .filter-output-button{
     background: none;

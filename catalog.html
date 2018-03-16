@@ -25,10 +25,10 @@
     
     <main>
       
-      <h1 class="hidden">Поиск гостиницы</h1>
+      <h1 class="visually-hidden">Поиск гостиницы</h1>
       
       <section class="moteles-filter">
-        <h2 class="hidden">Фильтр гостиницы</h2>
+        <h2 class="visually-hidden">Фильтр гостиницы</h2>
         <form class="moteles-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -53,16 +53,18 @@
                 <rect width="317" height="2" x="10px" y="9px" fill="#ababab"/>
                 <rect width="248" height="2" x="20px" y="9px" fill="#ffffff"/>
               </svg>
-              <button class="hidden filter-range-button-1" type="button" aria-label="ползунок влево"></button>
-              <button class="hidden filter-range-button-2" type="button" aria-label="ползунок вправо"></button>
+              <div class="filter-range-button">
+                <button class="filter-range-button-1" type="button" aria-label="ползунок влево"></button>
+                <button class="filter-range-button-2" type="button" aria-label="ползунок вправо"></button>
+              </div>
             </div>
+            <button class="button-transparent" type="submit">Показать</button>
           </fieldset>
-          <button class="button-transparent" type="submit">Показать</button>
         </form>
       </section>
       
       <section class="filter-output">
-        <h2 class="hidden">Результаты поиска гостиницы</h2>
+        <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
         <span>Найдено: 3</span>
         <p class="filter-sorting">
           <b>сортировка:</b>
