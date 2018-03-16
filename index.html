@@ -8,14 +8,13 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body >
+  <body>
+  <div class="main-page">
     <header class="main-header">
     
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.png" width="138" height="70" alt="Логотип City of Sedona">
-        </a>
         <ul class="site-navigation">
+          <li class="main-header-logo" ><a><img src="img/logo.png" width="138" height="70" alt="Логотип City of Sedona"></a></li>
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
           <li><a href="state_map.html">Карта штата</a></li>
@@ -25,18 +24,18 @@
 
     </header>
     <main>
-      <h1 class="hidden">Добро пожаловать в Седону</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       
       <div class="introduction">
         <img src="img/Welcome_to_Sedona.png" width="457" height="352" alt="Welcome to Sedona" >
       </div>
       
       <section class="promo">
-        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <b>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</b>
       </section>
       
       <section class="features">
-        <h2 class="hidden">Особенности Седоны</h2>
+        <h2 class="visually-hidden">Особенности Седоны</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul>
           <li>
@@ -68,7 +67,7 @@
       </section>
       
       <section class="advice">
-        <h2 class="hidden">Советы туристам Седоны</h2>
+        <h2 class="visually-hidden">Советы туристам Седоны</h2>
         <ul>
           <li>
             <h3>Жилье</h3>
@@ -86,14 +85,14 @@
       </section>
       
       <section class="motel-search">
-        <h2 class="hidden">Поиск гостиницы в Седоне</h2>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <b>Заинтересовались?</b>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="button-brown">Поиск гостиницы в Седоне</button>
       </section>
       
       <section class="Sedona-map">
-        <h2 class="hidden">Карта штата</h2>
+        <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="473" alt="Карта штата">
       </section>
     
@@ -114,8 +113,8 @@
       </p>
     </footer>
     
-    <section class="modal-motel-search">
-      <h2 class="hidden">Заполните форму поиска</h2>
+    <section class="modal-motel-search visually-hidden">
+      <h2 class="visually-hidden">Заполните форму поиска</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="search-arival-date">Дата заезда:</label>
@@ -137,6 +136,6 @@
       </form>
     </section>
     <!-- <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p> -->
-
+  </div>
   </body>
 </html>
