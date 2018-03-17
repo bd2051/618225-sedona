@@ -163,10 +163,13 @@ a {
 .introduction{
   padding: 0;
   margin: 0;
-  min-height: 508px;
-  padding-top: 132px;
+  min-height: 432px;
+  padding-top: 76px;
   
-  background-color: #59656f;
+/*   background-color: #59656f; */
+  background: 
+    url("../img/background_mask.png") no-repeat bottom,
+    url("../img/background.jpg") no-repeat 0px -56px #59656f;
 }
 
 .introduction img{
@@ -181,9 +184,10 @@ a {
 .promo {
   padding: 0;
   margin: 0;
-  padding-top: 62px;
-  padding-bottom: 15px;
-  margin-bottom: 9px;
+  padding-top: 60px;
+   padding-bottom: 6px; 
+/*   margin-bottom: 9px; */
+  
   
   font-size: 21px;
   line-height: 26px;
@@ -194,7 +198,7 @@ a {
 .features {
   padding: 0;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 6px; 
   text-align: center
 }
 
@@ -210,11 +214,45 @@ a {
   list-style: none;
 }
 
+.features li {
+  padding: 0;
+  margin: 0;
+}
+
 
 .features li:first-child, .features li:nth-child(2){
   color: #ffffff;
   background-color: #81b3d2;
+  
+  min-height: 256px;
 }
+
+.features li:first-child {
+  background: 
+    url("../img/shop_of_sedona.jpg") no-repeat right -78px,
+    #81b3d2;
+  
+  position: relative;
+}
+
+.features .first-feature{
+  position: absolute;
+  left: 60px;  
+}
+
+.features li:nth-child(2) {
+  background: 
+    url("../img/diablo_bridge.jpg") no-repeat left -76px,
+    #81b3d2;
+  
+  position: relative;
+}
+
+.features .second-feature{
+  position: absolute;
+  right: 49px;  
+}
+
 
 .features h3{
   font-size: 21px;
