@@ -518,27 +518,36 @@ a {
 
 .filter-range-button {
   display: flex;
-  height: 20px;
+  height: 24px;
   
   position: absolute;
-  top: 1px;
+  top: 0px;
   z-index: 1;
 }
 
 .filter-range-button-1{
-  background: url("../img/filter-button.svg") no-repeat ;
-  width: 20px;
+  background: url("../img/filter-button.svg") no-repeat center;
+  width: 22px;
   cursor: pointer;
   border-style: none;
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
+.filter-range-button-1:hover {
+  background-size: auto 100%;
+}
+
+
 .filter-range-button-2{
-  background: url("../img/filter-button.svg") no-repeat ;
-  width: 20px;
+  background: url("../img/filter-button.svg") no-repeat center;
+  width: 22px;
   cursor: pointer;
   border-style: none;
-  margin-left: 228px;
+  margin-left: 226px;
+}
+
+.filter-range-button-2:hover {
+  background-size: auto 100%;
 }
 
 
@@ -564,8 +573,7 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.filter-output-button svg path {
-
+.filter-output-button path {
     fill:inherit;
 }
 
