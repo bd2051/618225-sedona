@@ -390,14 +390,13 @@ a {
 .moteles-filter {
   padding: 0;
   margin: 0;
-
+  
+  background: url("../img/filter_background.jpg") no-repeat 0px -56px #2d3f49;
 }
 
 .moteles-filter-form {
   font: inherit;
   color: #ffffff;
-  
-  background-color: #2d3f49;
   
   display: flex;
   min-height: 217px;
