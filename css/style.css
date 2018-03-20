@@ -384,10 +384,10 @@ a {
   margin-bottom: 10px;
 }
 
-.motel-search{
+.motel-search {
   padding: 0;
   margin: 0;
-  padding-top: 54px;
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -400,7 +400,7 @@ a {
 .motel-search p {
   line-height: 24px;
   
-  padding-top: 24px;
+  padding-top: 10px;
   padding-bottom: 24px;
   margin-bottom: 24px;
 }
@@ -421,29 +421,124 @@ a {
   margin: 0;
   
   display: flex;
-  justify-content: space-around; /* -------------------------временно--------------------------- */
-  align-items: center;
   min-height: 120px;
+  justify-content: space-around;
 }
 
 .footer-hashtag {
-  font-size: 21px;
-  line-height: 26px;
+  width: 33%;
 }
 
-.footer-copyright {
+.footer-hashtag b{
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 40px;
+  
+  font-size: 21px;
   line-height: 26px;
+  
+  text-align: center;
+  vertical-align: center;
+}
+
+.footer-social {
+  width: 33%;
 }
 
 .footer-social ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+ 
   list-style: none;
   
   display: flex;
+  justify-content: center;
+}
+
+.footer-social li {
+  padding: 0;
+  margin: 0;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 
 .social-button {
-  color: #81b3d2;
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
 }
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active::before {
+  opacity: 0.3;
+}
+
+.twitter::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: url("../img/twitter.svg") no-repeat center;
+}
+
+.facebook::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: url("../img/fb-icon.svg") no-repeat center;
+}
+
+.youtube::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 48px;
+  background: url("../img/youtube.svg") no-repeat center;
+}
+
+.footer-copyright {
+  width: 33%;
+}
+
+.footer-copyright p{
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 33px;
+  width: 198px;
+  
+  line-height: 26px;
+}
+
+
+
+.footer-copyright svg {
+  display: inline;
+  vertical-align: middle;
+  
+  margin-left: 5px;
+}
+
+.footer-copyright:hover path {
+  fill: #81b3d2;
+}
+
+.footer-copyright:active path {
+  fill: #bdbbbc;
+}
+
+
 
 /* Modal */
 .modal-motel-search {
