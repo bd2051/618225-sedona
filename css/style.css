@@ -267,6 +267,7 @@ a {
   padding: 0  60px;
   padding-top: 47px;
   padding-bottom: 60px;
+  
 }
 
 .feature-container h3 {
@@ -292,43 +293,42 @@ a {
   color: #ffffff;
   background-color: #81b3d2;
   
-  min-height: 256px;
   box-sizing: border-box;
   width: 100%;
 }
 
 .features-list .first-feature {
   background: url("../img/shop_of_sedona.jpg") no-repeat right -78px #81b3d2;
-
-  position: relative;
   
   order: -2;
+  
+  text-align: left;
 }
 
 .first-feature-container{
-  position: absolute;
-  left: 0px;  
-  
+  display: inline-block;
   box-sizing: border-box;
   width: 33%;
   padding-left: 50px;
   padding-right: 50px;
+  
+  text-align: center;
 }
 
 .features-list .second-feature {
   background: url("../img/diablo_bridge.jpg") no-repeat left -76px #81b3d2;
   
-  position: relative;
+  text-align: right;
 }
 
 .second-feature-container{
-  position: absolute;
-  right: 0px;
-  
+  display: inline-block;
   box-sizing: border-box;
   width: 33%;
   padding-left: 40px;
   padding-right: 40px;
+  
+  text-align: center;
 }
 
 
@@ -387,7 +387,7 @@ a {
 .motel-search {
   padding: 0;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 48px;
   text-align: center;
 }
 
