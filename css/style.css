@@ -600,6 +600,15 @@ a {
   box-sizing: border-box;
 }
 
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: transparent;
+  outline-color: #e5e5e5;
+}
+
 .search-form input[value]{
   padding-left: 12px;
 }
