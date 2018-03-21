@@ -1,4 +1,4 @@
-/*Основные стили*/
+/*--------------------------------------Основные стили---------------------------------------*/
 
 body {
   margin: 0;
@@ -88,7 +88,7 @@ a {
   overflow: hidden;
 }
 
-/*Главная страница Index*/
+/*-------------------------------------------------Главная страница Index------------------------------*/
 
 .main-page {
   min-width: 1200px;
@@ -103,7 +103,7 @@ a {
 
 }
 
-/* Header */
+/* --------------------------------------------------Header --------------------------------------------*/
 .main-header {
   padding: 0;
   margin: 0;
@@ -185,10 +185,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-
-
-
-/* Main */
+/* ----------------------------------------------------Main------------------------------------ */
 
 
 .introduction{
@@ -389,6 +386,8 @@ a {
   margin: 0;
   padding-top: 48px;
   text-align: center;
+  
+  position: relative;
 }
 
 .motel-search b {
@@ -415,7 +414,7 @@ a {
   min-height: 86px;
 }
 
-/* Footer */
+/* ----------------------------------------------------Footer --------------------------------*/
 .main-footer {
   padding: 0;
   margin: 0;
@@ -523,38 +522,73 @@ a {
 
 
 
-.footer-copyright svg {
+.htmlacademy {
   display: inline;
   vertical-align: middle;
   
   margin-left: 5px;
 }
 
-.footer-copyright:hover path {
+.htmlacademy:hover path {
   fill: #81b3d2;
 }
 
-.footer-copyright:active path {
+.htmlacademy:active path {
   fill: #bdbbbc;
 }
 
 
 
-/* Modal */
+/*---------------------------------------------------------Modal ------------------------------*/
 .modal-motel-search {
-  padding: 0;
+  padding: 55px;
   margin: 0;
-  text-align: center
+  width: 568px;
+  left: 50%;
+  margin-left: -284px;
+
+  position: absolute;
+  
+  background-color: #ffffff;
+  
+  box-sizing: border-box;
+  
+  box-shadow: 
+    0px 0 15px rgba(0, 1, 1, 0.2),
+    0px 0 15px rgba(0, 1, 1, 0.2);
 }
 
 .search-form {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  
   font: inherit;
   line-height: 26px;
   font-weight: 700;
   
+  display: flex;
+  flex-direction: column;
+}
+
+.search-form p {
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+  position: relative;
 }
 
 .search-form input{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 29px;
+  width: 346px;
+  height: 38px;
+  
   font: inherit;
   line-height: 26px;
   font-weight: 700;
@@ -562,15 +596,135 @@ a {
   
   background-color: #f2f2f2;
   border: 0;
+  
+  box-sizing: border-box;
+}
+
+.search-form input[value]{
+  padding-left: 12px;
+}
+
+.search-calendar {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+
+  background: none;
+  border-style: none;
+}
+
+.search-calendar svg {
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.search-calendar:hover path, .search-calendar:focus path {
+  fill: #000000;
+}
+
+.search-calendar:active path {
+  fill: #81b3d2;
+}
+
+.number-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.minus-button {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 19px;
+  right: 95px;
+
+  background: none;
+  border-style: none;
+}
+
+.minus-button svg {
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.minus-button:hover rect, .minus-button:focus rect{
+  fill: #000000;
+}
+
+.minus-button:active rect {
+  fill: #81b3d2;
+}
+
+.plus-button {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 19px;
+  right: 19px;
+
+  background: none;
+  border-style: none;
+}
+
+.plus-button svg {
+  margin: 0;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.plus-button:hover rect {
+  fill: #000000;
+}
+
+.plus-button:active rect {
+  fill: #81b3d2;
+}
+
+.number-container p:first-child {
+  width: 226px;
+}
+
+.number-container p:last-child {
+  width: 180px;
+}
+
+.number-container input {
+  width: 114px;
+}
+
+.number-container input[value]{
+  padding: 0;
+  text-align: center;
 }
 
 .modal-motel-search .button-blue{
   font-size: 21px;
   line-height: 26px;
+  
+  width: 100%;
+  height: 58px;
+  margin-top: 24px;
 }
 
 
-/* Страница Магазин catalog.html ----------------*/
+/*---------------------------------Страница Магазин catalog.html ----------------------------------*/
 
 
 .catalog-page {
@@ -584,13 +738,13 @@ a {
     5px 0 15px rgba(0, 1, 1, 0.2);
 }
 
-/* Header */
+/*--------------------------------------------- Header --------------------------------------------*/
 
 .site-navigation-current {
   color: #766357;
 }
 
-/* Main */
+/* ------------------------------------------------Main-------------------------------------------- */
 .moteles-filter {
   padding: 0;
   margin: 0;
