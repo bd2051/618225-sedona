@@ -849,7 +849,7 @@ a {
   border-bottom: 0;
 }
 
-.filter-sorting .sorting-current{
+.filter-sorting .sorting-current, .filter-sorting .sorting-current:hover, .filter-sorting .sorting-current:focus, .filter-sorting .sorting-current:active {
   color: #81b3d2;
   border-bottom: 0;
 }
@@ -943,20 +943,16 @@ a {
 }
 
 
-.filter-output-button{
-    background: none;
-    border-style: none;
-    height: 12px;
-    width: 11px;
-    position: relative;
-/*  background: url("../img/icon-up-dir.svg") no-repeat ;
-    height: 11px;
-    width: 10px;
-    cursor: pointer;
-    border-style: none; */
+.filter-output-button, .filter-output-button-current{
+  display: inline-block;
+  background: none;
+  border-style: none;
+  height: 12px;
+  width: 11px;
+  position: relative;
 }
 
-.filter-output-button svg{
+.filter-output-button svg, .filter-output-button-current svg{
     margin: 0;
     position: absolute;
     top: 50%;
@@ -965,24 +961,20 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.filter-output-button path {
-    fill:inherit;
-}
-
-.filter-output-button-up{
+.filter-output-button path{
     fill: #cacaca;
 }
 
-.filter-output-button-down{
+.filter-output-button-current path{
     fill: #81b3d2;
 }
 
-.filter-output-button svg:hover{
+.filter-output-button path:hover{
  
     fill: #231f20;
 }
 
-.filter-output-button svg:active{
+.filter-output-button path:active{
  
     fill: #81b3d2;
 }
