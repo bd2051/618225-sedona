@@ -1005,14 +1005,19 @@ a {
 }
 
 .filter-output {
-  padding: 30px 6%;
-  padding-bottom: 6px;
+  padding-top: 30px;
+  padding-bottom: 2px;
   margin: 0;
 }
 
 .output-menu-container {
   display: flex;
   align-items: center;
+  
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .output-menu-container p {
@@ -1085,40 +1090,95 @@ a {
 }
 
 .filter-output-button svg, .filter-output-button-current svg{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .filter-output-button path{
-    fill: #cacaca;
+  fill: #cacaca;
 }
 
 .filter-output-button-current path{
-    fill: #81b3d2;
+  fill: #81b3d2;
 }
 
 .filter-output-button path:hover{
  
-    fill: #231f20;
+  fill: #231f20;
 }
 
 .filter-output-button path:active{
  
-    fill: #81b3d2;
+  fill: #81b3d2;
 }
 
 .filter-resualt {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-resualt li {
+  margin: 0;
+  padding: 30px 6%;
+  
+  border-bottom: 1px solid #e5e5e5;
+  
+  display: flex;
+}
+
+.filter-resualt p{
+  padding: 0;
+  margin: 0;
+}
+
+.filter-resualt h3{
+  padding: 0;
+  margin: 0;
 }
 
 .filter-resualt h3{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  
+  margin-top: -5px;
+}
+
+.result-main-container {
+  margin-left: 31px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result-main-container span {
+  display: inline-block;
+  
+  margin-bottom: 10px;
+  width: 115px;
+}
+
+.result-main-container .button-blue {
+  display: inline-block;
+  
+  padding: 3px 17px;
+  margin-right: 2px;
+}
+
+.result-main-container .button-brown {
+  display: inline-block;
+  
+  padding: 3px 17px;
 }
 
 .motel-name{
@@ -1132,6 +1192,41 @@ a {
 
 .motel-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.motel-rating-container {
+  margin-left: auto;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.motel-rating-container span {
+  display: block;
+  
+  padding: 3px 14px;
+}
+
+.motel-rating-container .motel-stars {
+  font-size: 0px;
+  
+  width: 25px;
+  padding: 0;
+  background: url("../img/star.svg") repeat-x ;
+}
+
+.motel-rating-container .four-stars {
+  width: 90px;
+}
+
+.motel-rating-container .three-stars {
+  width: 65px;
+}
+
+.motel-rating-container .two-stars {
+  width: 40px;
 }
 
 .motel-rating {
