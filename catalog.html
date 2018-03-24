@@ -71,21 +71,22 @@
               </label>
             </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="moteles-filter-price">
             <legend>Стоимость в сутки (Р):</legend>
-            <label for="moteles-filter-form-price-from">от</label>
-            <input id="moteles-filter-form-price-from" name="moteles-filter-form-price-from" type="text" value="0">
-            <label for="moteles-filter-form-price-up-to">до</label>
-            <input id="moteles-filter-form-price-up-to" name="moteles-filter-form-price-up-to" type="text" value="3000">
-            <div class="filter-range">
-              <svg>
-                <rect width="317" height="2" x="10px" y="9px" fill="#ababab"/>
-                <rect width="248" height="2" x="20px" y="9px" fill="#ffffff"/>
-              </svg>
-              <div class="filter-range-button">
-                <button class="filter-range-button-1" type="button" aria-label="ползунок влево"></button>
-                <button class="filter-range-button-2" type="button" aria-label="ползунок вправо"></button>
+            <div class="price-container">
+              <label class="min-price">от
+                <input id="moteles-filter-form-price-from" name="moteles-filter-form-price-from" type="text" value="0">
+              </label>
+              <label class="max-price">до
+                <input id="moteles-filter-form-price-up-to" name="moteles-filter-form-price-up-to" type="text" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
             </div>
             <button class="button-transparent" type="submit">Показать</button>
           </fieldset>
@@ -94,25 +95,27 @@
       
       <section class="filter-output">
         <h2 class="visually-hidden">Результаты поиска гостиницы</h2>
-        <span>Найдено: 3</span>
-        <p class="filter-sorting">
-          <b>сортировка:</b>
-          <a class="sorting-current">по цене</a>
-          <a href="#">по типу</a>
-          <a href="#">по рейтингу</a>
-        </p>
-        <p>
-          <a class="filter-output-button" href="#" aria-label="прокрутка вверх">
-            <svg width="11" height="10" viewBox="0 0 11 10">
-              <path  d="M5.5 0L0 10h11z"/>
-            </svg>
-          </a>
-          <a class="filter-output-button-current" aria-label="прокрутка вниз"> 
-            <svg width="11" height="10" viewBox="0 0 11 10">
-              <path d="M5.5 10L0 0h11"/>
-            </svg>
-          </a>
-        </p>
+        <div class="output-menu-container">
+          <span>Найдено: 3</span>
+          <p class="filter-sorting">
+            <b>сортировка:</b>
+            <a class="sorting-current">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по рейтингу</a>
+          </p>
+          <div class="filter-output-buttons">
+            <a class="filter-output-button" href="#" aria-label="прокрутка вверх">
+              <svg width="11" height="10" viewBox="0 0 11 10">
+                <path  d="M5.5 0L0 10h11z"/>
+              </svg>
+            </a>
+            <a class="filter-output-button-current" aria-label="прокрутка вниз"> 
+              <svg width="11" height="10" viewBox="0 0 11 10">
+                <path d="M5.5 10L0 0h11"/>
+              </svg>
+            </a>
+          </div>
+        </div>
         <ul class="filter-resualt">
           <li>
             <h3><a class="motel-name" href="#">Amara Resort &amp; Spa</a></h3>
