@@ -105,12 +105,12 @@ a {
     background-color: #ffffff;
 }
 
-}
-
 /* --------------------------------------------------Header --------------------------------------------*/
 .main-header {
   padding: 0;
   margin: 0;
+  
+  position: relative;
 }
 
 .main-navigation{
@@ -780,27 +780,51 @@ a {
 
 /* ------------------------------------------------Main-------------------------------------------- */
 .moteles-filter {
-  padding: 0;
+  padding: 26px 6%;
+  padding-bottom: 6px;
   margin: 0;
   
   background: url("../img/filter_background.jpg") no-repeat 0px -56px #2d3f49;
+  
+  
 }
 
 .moteles-filter-form {
+  padding: 0;
+  margin: 0;
+
   font: inherit;
   color: #ffffff;
   
   display: flex;
-  min-height: 217px;
-  align-items: center;
 }
 
 .moteles-filter-form fieldset:nth-child(3){
   margin-left: auto;
+  
+    width: 315px;
 }
 
 .moteles-filter-form fieldset{
+  padding: 0;
+  margin: 0;
   border:0;
+  
+  width: 255px;
+
+}
+
+.moteles-filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.moteles-filter-container label{
+  margin-left: 40px;
+  margin-bottom: 25px;
+  
+  position: relative;
 }
 
 .moteles-filter-form input[type="text"]{
@@ -812,10 +836,32 @@ a {
   color: #ffffff;
 }
 
+.moteles-filter-container input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: -40px;
+
+  width: 27px;
+  height: 27px;
+
+  background: url("../img/checkbox-off.svg") no-repeat ;
+}
+
+.moteles-filter-container input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #ffffff;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.moteles-filter-container input[type="checkbox"]:checked + .checkbox-indicator{
+  background: url("../img/checkbox-on.svg") no-repeat ;
+}
 
 .moteles-filter-form legend{
   font-size: 16px;
   font-weight: 700;
+  
+  margin-bottom: 26px;
 }
 
 .moteles-filter-form .button-transparent {/* Здесь будут ширина и высота кнопки */

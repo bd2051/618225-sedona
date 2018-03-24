@@ -9,6 +9,7 @@
   </head>
   <body>
   <div class="catalog-page">
+  
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.png" width="138" height="70" alt="Логотип City of Sedona">
@@ -21,7 +22,6 @@
           <li class="site-navigation-current">Гостиницы</li>
         </ul>
       </nav>
-
     </header>
     
     <main>
@@ -33,15 +33,43 @@
         <form class="moteles-filter-form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <label><input name="moteles-filter-form-pool" type="checkbox" checked>Бассейн</label>
-            <label><input name="moteles-filter-form-parking" type="checkbox">Парковка</label>
-            <label><input name="moteles-filter-form-wifi" type="checkbox">Wi-Fi</label>
+            <div class="moteles-filter-container">
+              <label>
+                <input class="visually-hidden" name="moteles-filter-form-pool" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Бассейн
+              </label>
+              <label>
+                <input class="visually-hidden" name="moteles-filter-form-parking" type="checkbox">
+                <span class="checkbox-indicator"></span>
+                Парковка
+              </label>
+              <label>
+                <input class="visually-hidden" name="moteles-filter-form-wifi" type="checkbox">
+                <span class="checkbox-indicator"></span>
+                Wi-Fi
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-            <label><input name="moteles-filter-form-hotel" type="checkbox" checked>Гостиница</label>
-            <label><input name="moteles-filter-form-motel" type="checkbox" checked>Мотель</label>
-            <label><input name="moteles-filter-form-apart" type="checkbox" checked>Апартаменты</label>
+            <div class="moteles-filter-container">
+              <label>
+                <input class="visually-hidden" name="moteles-filter-form-hotel" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Гостиница
+              </label>
+              <label>
+                <input class="visually-hidden" name="moteles-filter-form-motel" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Мотель
+              </label>
+              <label>
+                <input class="visually-hidden" name="moteles-filter-form-apart" type="checkbox" checked>
+                <span class="checkbox-indicator"></span>
+                Апартаменты
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
