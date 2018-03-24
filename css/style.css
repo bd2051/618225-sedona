@@ -426,8 +426,6 @@ a {
 
 .sedona-map {
   position: absolute;
-  
-  margin-bottom: -120px;
 }
 
 /* ----------------------------------------------------Footer --------------------------------*/
@@ -578,7 +576,8 @@ a {
     0px 0 15px rgba(0, 1, 1, 0.2),
     0px 0 15px rgba(0, 1, 1, 0.2);
 
-  display: none;
+  z-index: 20;
+  /* display: none; */
 }
 
 .search-form {
@@ -611,6 +610,8 @@ a {
   margin-bottom: 29px;
   width: 346px;
   height: 38px;
+  padding-left: 12px;
+  padding-right: 38px;
   
   font: inherit;
   line-height: 26px;
@@ -630,10 +631,6 @@ a {
 .search-form input:focus {
   background-color: transparent;
   outline-color: #e5e5e5;
-}
-
-.search-form input[value]{
-  padding-left: 12px;
 }
 
 .search-calendar {
@@ -739,10 +736,11 @@ a {
 
 .number-container input {
   width: 114px;
+  padding-left: 38px;
+  padding-right: 38px;
 }
 
 .number-container input[value]{
-  padding: 0;
   text-align: center;
 }
 
