@@ -90,7 +90,7 @@ a {
   overflow: hidden;
 }
 
-/*-------------------------------------------------Главная страница Index------------------------------*/
+/*----------------------------------------Главная страница Index----------------------------*/
 
 .main-page {
   min-width: 768px;
@@ -109,7 +109,7 @@ a {
     background-color: #ffffff;
 }
 
-/* --------------------------------------------------Header --------------------------------------------*/
+/* -------------------------------------Header --------------------------------------------*/
 .main-header {
   padding: 0;
   margin: 0;
@@ -186,6 +186,8 @@ a {
 
 .site-navigation li:nth-last-child(2) {
   margin-left: auto;
+  
+  letter-spacing: 0.6px;
 }
 
 
@@ -202,7 +204,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* ----------------------------------------------------Main------------------------------------ */
+/* -------------------------------------------Main------------------------------------ */
 
 
 .introduction{
@@ -977,6 +979,14 @@ a {
   background: url("../img/checkbox-on.svg") no-repeat ;
 }
 
+.moteles-filter-container input:disabled + .checkbox-indicator{
+  background: url("../img/checkbox-off-disabled.svg") no-repeat ;
+}
+
+.moteles-filter-container input:disabled:checked + .checkbox-indicator{
+  background: url("../img/checkbox-on-disabled.svg") no-repeat ;
+}
+
 .moteles-filter-form legend {
   font-size: 16px;
   font-weight: 700;
@@ -1039,10 +1049,7 @@ a {
   font-size: 14px;
   vertical-align: baseline;
   
-  cursor: pointer;
-  
   -webkit-box-sizing: border-box;
-  
           box-sizing: border-box;
   width: 50%;
 }
