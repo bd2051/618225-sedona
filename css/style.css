@@ -14,7 +14,7 @@ body {
   background-color: #f2f2f2;
 }
 
-
+img { max-width: 100% }
 
 a {
   text-decoration: none;
@@ -93,7 +93,7 @@ a {
 /*-------------------------------------------------Главная страница Index------------------------------*/
 
 .main-page {
-  min-width: 1200px;
+  min-width: 768px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -215,6 +215,7 @@ a {
   background: 
     url("../img/background_mask.png") no-repeat bottom,
     url("../img/background.jpg") no-repeat 0px -56px #59656f;
+  background-size: 100% 57px, 100% 773px;
 }
 
 .introduction img{
@@ -302,7 +303,7 @@ a {
 }
 
 .feature-container h3 {
-  padding: 0 60px;
+  padding: 0;
   margin-bottom: 25px;
   
   font-size: 21px;
@@ -332,6 +333,7 @@ a {
 
 .features-list .first-feature {
   background: url("../img/shop_of_sedona.jpg") no-repeat right -78px #81b3d2;
+  background-size: 66.6% 401px;
   
   -webkit-box-ordinal-group: -1;
   
@@ -348,7 +350,7 @@ a {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 33%;
+  width: 33.3%;
   padding-left: 50px;
   padding-right: 50px;
   
@@ -357,6 +359,7 @@ a {
 
 .features-list .second-feature {
   background: url("../img/diablo_bridge.jpg") no-repeat left -76px #81b3d2;
+  background-size: 66.6% 401px;
   
   text-align: right;
 }
@@ -365,7 +368,7 @@ a {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 33%;
+  width: 33.3%;
   padding-left: 40px;
   padding-right: 40px;
   
@@ -865,7 +868,7 @@ a {
 
 
 .catalog-page {
-  min-width: 1200px;
+  min-width: 768px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -1053,7 +1056,7 @@ a {
 }
 
 .price-container input {
-  width: 50px;
+  width: 40px;
   margin: 0;
   padding: 0;
 
