@@ -1006,9 +1006,7 @@ a {
 .price-container {
   position: relative;
   
-  height: 32px;
   margin-bottom: 20px;
-  padding: 0;
 
   font-size: 0;
 
@@ -1033,9 +1031,9 @@ a {
 
 .price-container label {
   display: inline-block;
+  padding: 6px 0;
 
   font-size: 14px;
-  line-height: 32px;
   vertical-align: baseline;
   
   cursor: pointer;
