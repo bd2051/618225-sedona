@@ -115,6 +115,7 @@ a {
   margin: 0;
   
   position: relative;
+  
 }
 
 .main-navigation{
@@ -216,8 +217,9 @@ a {
 /*   background-color: #59656f; */
   background: 
     url("../img/background_mask.png") no-repeat bottom,
-    url("../img/background.jpg") no-repeat 0px -56px #59656f;
-  background-size: 100% 57px, 100% 773px;
+    url("../img/background.jpg") no-repeat 0px 21% #59656f;
+  background-size: 100% 57px, 100%  773px ;
+  background-size: 100% 57px, calc( 95% + 60px )  auto ;
 }
 
 .introduction img{
@@ -264,11 +266,8 @@ a {
   list-style: none;
   
   display: -webkit-box;
-  
   display: -webkit-flex;
-  
   display: -ms-flexbox;
-  
   display: flex;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -288,11 +287,8 @@ a {
   background-color: #eeeeee;
   
   -webkit-box-flex: 1;
-  
   -webkit-flex-grow: 1;
-  
       -ms-flex-positive: 1;
-  
           flex-grow: 1;
 }
 
@@ -300,8 +296,6 @@ a {
   margin: 0;
   padding: 0  60px;
   padding-top: 47px;
-  padding-bottom: 60px;
-  
 }
 
 .feature-container h3 {
@@ -321,6 +315,7 @@ a {
 .feature-container p {
   margin: 0;
   padding: 0; 
+  margin-bottom: 60px;
 }
 
 .features-list .first-feature, .features-list .second-feature{
@@ -334,15 +329,12 @@ a {
 }
 
 .features-list .first-feature {
-  background: url("../img/shop_of_sedona.jpg") no-repeat right -78px #81b3d2;
-  background-size: 66.6% 401px;
+  background: url("../img/shop_of_sedona.jpg") no-repeat right 54% #81b3d2;
+  background-size: 66.6% auto;
   
   -webkit-box-ordinal-group: -1;
-  
   -webkit-order: -2;
-  
       -ms-flex-order: -2;
-  
           order: -2;
   
   text-align: left;
@@ -353,15 +345,19 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 33.3%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 4%;
+  padding-right: 4%;
   
   text-align: center;
 }
 
+.first-feature-container p{
+  margin-bottom: 19.7%;
+}
+
 .features-list .second-feature {
-  background: url("../img/diablo_bridge.jpg") no-repeat left -76px #81b3d2;
-  background-size: 66.6% 401px;
+  background: url("../img/diablo_bridge.jpg") no-repeat left 54% #81b3d2;
+  background-size: 66.6% auto;
   
   text-align: right;
 }
@@ -371,27 +367,25 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 33.3%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 3%;
+  padding-right: 3%;
   
   text-align: center;
 }
 
-
+.second-feature-container p{
+  margin-bottom:  18%;
+}
 
 .features-list .advice {
   text-align: center;
   
   -webkit-box-ordinal-group: 0;
-  
   -webkit-order: -1;
-  
       -ms-flex-order: -1;
-  
           order: -1;
   
   -webkit-box-sizing: border-box;
-  
           box-sizing: border-box;
   width: 100%;
   
@@ -404,11 +398,8 @@ a {
   list-style: none;
   
   display: -webkit-box;
-  
   display: -webkit-flex;
-  
   display: -ms-flexbox;
-  
   display: flex;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
@@ -909,11 +900,8 @@ a {
   color: #ffffff;
   
   display: -webkit-box;
-  
   display: -webkit-flex;
-  
   display: -ms-flexbox;
-  
   display: flex;
 }
 
