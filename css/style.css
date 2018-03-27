@@ -479,6 +479,11 @@ a {
 
 .sedona-map {
   position: absolute;
+  width: 100%;
+}
+
+.sedona-map iframe {
+  width: 100%;
 }
 
 /* ----------------------------------------------------Footer --------------------------------*/
@@ -650,7 +655,8 @@ a {
     0px 0 15px rgba(0, 1, 1, 0.2);
 
   z-index: 20;
-  /* display: none; */
+  
+  display: none;
 }
 
 .search-form {
@@ -856,6 +862,24 @@ a {
   margin-top: 24px;
 }
 
+.js-modal-show {
+  display: block;
+  
+  animation: appearance 0.6s;
+}
+
+@keyframes appearance {
+  0% {
+	transform-origin: top;
+    transform: scaleY(0.001);
+  }
+
+  100% {
+	transform-origin: top;
+    transform: scaleY(1);
+  }
+}
+
 
 /*---------------------------------Страница Магазин catalog.html ----------------------------------*/
 
@@ -911,7 +935,6 @@ a {
   border:0;
   
   width: 255px;
-
 }
 
 .moteles-filter-container {
