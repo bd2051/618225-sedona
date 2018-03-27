@@ -20,8 +20,10 @@
       evt.preventDefault();
       popup.classList.toggle("js-modal-show");
       arival.focus();
-      if (storage) {
-        persons.value = storage;
+      if (storagepersons) {
+        persons.value = storagepersons;
+      }
+      if (storagechild) {
         child.value = storagechild;
       }
     });
