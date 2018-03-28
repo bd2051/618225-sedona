@@ -864,12 +864,12 @@ a {
 
 @keyframes appearance {
   0% {
-	transform-origin: top;
+    transform-origin: top;
     transform: scaleY(0.001);
   }
 
   100% {
-	transform-origin: top;
+    transform-origin: top;
     transform: scaleY(1);
   }
 }
