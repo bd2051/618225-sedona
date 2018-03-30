@@ -235,6 +235,8 @@ a {
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  
+  color: #000000;
 }
 
 .features {
@@ -247,6 +249,8 @@ a {
 .features h3 {
   padding: 0;
   margin: 0;
+  
+  color: #000000;
 }
 
 .features > p {
@@ -349,6 +353,10 @@ a {
   vertical-align: baseline;
 }
 
+.first-feature-container h3 {
+  color: #ffffff;
+}
+
 .first-feature-container p{
   margin-bottom: 19.7%;
 }
@@ -374,6 +382,8 @@ a {
 
 .second-feature-container h3 {
   padding: 0;
+  
+  color: #ffffff;
 }
 
 .second-feature-container p{
@@ -455,6 +465,7 @@ a {
   font-size: 30px;
   line-height: 36px;
   
+  color: #000000;
 }
 
 .motel-search p {
@@ -468,6 +479,7 @@ a {
 .motel-search .button-brown {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   
   margin-left: auto;
   margin-right: auto;
@@ -508,6 +520,8 @@ a {
   
   position: relative;
   z-index: 10;
+  
+  color: #000000;
 }
 
 .footer-hashtag {
@@ -524,7 +538,6 @@ a {
   line-height: 26px;
   
   text-align: center;
-  vertical-align: center;
 }
 
 .footer-social {
@@ -612,13 +625,12 @@ a {
   line-height: 26px;
 }
 
-
-
 .htmlacademy {
   display: inline;
   vertical-align: middle;
   
   margin-left: 5px;
+  padding-bottom: 5px;
 }
 
 .htmlacademy:hover path {
@@ -632,7 +644,7 @@ a {
 
 
 /*---------------------------------------------------------Modal ------------------------------*/
-.modal-motel-search {
+.motel-search .modal-motel-search {
   padding: 55px;
   margin: 0;
   width: 568px;
@@ -654,7 +666,7 @@ a {
 
   z-index: 20;
   
-  display: none;
+  color: #000000;
 }
 
 .search-form {
@@ -857,7 +869,7 @@ a {
   
   width: 100%;
   height: 58px;
-  margin-top: 24px;
+  margin-top: 26px;
 }
 
 .js-modal-show {
@@ -1140,11 +1152,12 @@ a {
   display: block;
   margin: 0 auto;
   margin-right: 30%;
-  padding: 6px 35px;
-  padding-right: 32px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 34px;
+  padding-right: 33px;
 
   font-size: 14px;
-  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1180,6 +1193,8 @@ a {
   padding-right: 6%;
   padding-bottom: 30px;
   border-bottom: 1px solid #e5e5e5;
+  
+  color: #000000;
 }
 
 .output-menu-container p {
@@ -1212,7 +1227,7 @@ a {
   margin-left: 30px;
 }
 
-.filter-sorting b {
+.filter-sorting span {
   margin-right: 5px;
 }
 
@@ -1325,14 +1340,14 @@ a {
 .filter-resualt h3{
   padding: 0;
   margin: 0;
-}
 
-.filter-resualt h3{
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   
   margin-top: -5px;
+  
+  color: #000000;
 }
 
 .result-main-container {
