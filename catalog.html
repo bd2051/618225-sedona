@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <div class="catalog-page">
@@ -71,25 +71,27 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="moteles-filter-price">
-            <legend>Стоимость в сутки (Р):</legend>
-            <div class="price-container">
-              <label class="min-price">от
-                <input id="moteles-filter-form-price-from" name="moteles-filter-form-price-from" type="text" value="0">
-              </label>
-              <label class="max-price">до
-                <input id="moteles-filter-form-price-up-to" name="moteles-filter-form-price-up-to" type="text" value="3000">
-              </label>
-            </div>
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+          <div class="moteles-filter-price">
+            <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+              <div class="price-container">
+                <label class="min-price">от
+                  <input id="moteles-filter-form-price-from" name="moteles-filter-form-price-from" type="text" value="0">
+                </label>
+                <label class="max-price">до
+                  <input id="moteles-filter-form-price-up-to" name="moteles-filter-form-price-up-to" type="text" value="3000">
+                </label>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
-            </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+            </fieldset>
             <button class="button-transparent" type="submit">Показать</button>
-          </fieldset>
+          </div>
         </form>
       </section>
       

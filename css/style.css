@@ -106,7 +106,7 @@ a {
     -5px 0 15px rgba(0, 1, 1, 0.2),
     5px 0 15px rgba(0, 1, 1, 0.2);
 
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 /* -------------------------------------Header --------------------------------------------*/
@@ -227,7 +227,7 @@ a {
 }
 
 .promo {
-  padding: 0;
+  padding: 0 25%;
   margin: 0;
   padding-top: 60px;
   padding-bottom: 6px; 
@@ -289,12 +289,12 @@ a {
 
 .feature-container {
   margin: 0;
-  padding: 0  60px;
+  padding: 0  15%;
   padding-top: 47px;
 }
 
 .feature-container h3 {
-  padding: 0;
+  padding: 0 calc(30% - 23px);
   margin-bottom: 25px;
   
   font-size: 21px;
@@ -312,7 +312,7 @@ a {
 .feature-container p {
   margin: 0;
   padding: 0; 
-  margin-bottom: 60px;
+  margin-bottom: 21.4%;
 }
 
 .features-list .first-feature, .features-list .second-feature{
@@ -370,6 +370,10 @@ a {
   
   text-align: center;
   vertical-align: baseline;
+}
+
+.second-feature-container h3 {
+  padding: 0;
 }
 
 .second-feature-container p{
@@ -1004,13 +1008,13 @@ a {
   margin-left: auto;
   
   width: 30%;
-}
-
-.moteles-filter-price {
-  margin-left: auto;
-
+  
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.moteles-filter-price fieldset {
+  width: 100%;
 }
 
 .moteles-filter-price legend {
