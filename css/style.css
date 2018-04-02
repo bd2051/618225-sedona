@@ -33,7 +33,7 @@ a {
 }
 
 .button-brown:hover,
-.button-brown:focus{
+.button-brown:focus {
   background-color: #604e43;
 }
 
@@ -57,7 +57,7 @@ a {
 }
 
 .button-blue:hover,
-.button-blue:focus{
+.button-blue:focus {
   background-color: #669ec0;
 }
 
@@ -118,7 +118,7 @@ a {
   
 }
 
-.main-navigation{
+.main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
@@ -203,7 +203,7 @@ a {
 /* -------------------------------------------Main------------------------------------ */
 
 
-.introduction{
+.introduction {
   padding: 0;
   margin: 0;
   min-height: 432px;
@@ -217,7 +217,7 @@ a {
   background-size: 100% 57px, calc( 95% + 60px )  auto ;
 }
 
-.introduction img{
+.introduction img {
   width: 457px;
   height: 352px;
   
@@ -319,7 +319,7 @@ a {
   margin-bottom: 21.4%;
 }
 
-.features-list .first-feature, .features-list .second-feature{
+.features-list .first-feature, .features-list .second-feature {
   color: #ffffff;
   background-color: #81b3d2;
   
@@ -341,7 +341,7 @@ a {
   text-align: left;
 }
 
-.first-feature-container{
+.first-feature-container {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -357,7 +357,7 @@ a {
   color: #ffffff;
 }
 
-.first-feature-container p{
+.first-feature-container p {
   margin-bottom: 19.7%;
 }
 
@@ -368,7 +368,7 @@ a {
   text-align: right;
 }
 
-.second-feature-container{
+.second-feature-container {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -386,8 +386,8 @@ a {
   color: #ffffff;
 }
 
-.second-feature-container p{
-  margin-bottom:  18%;
+.second-feature-container p {
+  margin-bottom: 18%;
 }
 
 .features-list .advice {
@@ -443,7 +443,7 @@ a {
 
 }
 
-.advice h3{
+.advice h3 {
   display: inline-block;
   
   margin-bottom: 10px;
@@ -528,7 +528,7 @@ a {
   width: 33%;
 }
 
-.footer-hashtag b{
+.footer-hashtag b {
   display: block;
   padding: 0;
   margin: 0 auto;
@@ -615,7 +615,7 @@ a {
   width: 33%;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   display: block;
   padding: 0;
   margin: 0 auto;
@@ -705,7 +705,7 @@ a {
   position: relative;
 }
 
-.search-form input{
+.search-form input {
   padding: 0;
   margin: 0;
   margin-bottom: 29px;
@@ -760,7 +760,6 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -810,14 +809,13 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 
-.minus-button:hover rect, .minus-button:focus rect{
+.minus-button:hover rect, .minus-button:focus rect {
   fill: #000000;
 }
 
@@ -844,7 +842,6 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -877,11 +874,11 @@ a {
   padding-left: 38px;
 }
 
-.number-container input[value]{
+.number-container input[value] {
   text-align: center;
 }
 
-.modal-motel-search .button-blue{
+.modal-motel-search .button-blue {
   font-size: 21px;
   line-height: 26px;
   
@@ -958,7 +955,7 @@ a {
   display: flex;
 }
 
-.moteles-filter-form fieldset{
+.moteles-filter-form fieldset {
   padding: 0;
   margin: 0;
   border:0;
@@ -982,19 +979,19 @@ a {
           justify-content: space-between;
 }
 
-.moteles-filter-container label{
+.moteles-filter-container label {
   margin-left: 40px;
   margin-bottom: 25px;
   
   position: relative;
 }
 
-.moteles-filter-form input[type="text"]{
+.moteles-filter-form input[type="text"] {
   background: transparent;
   border: 0;
 }
 
-.moteles-filter-form input[value]{
+.moteles-filter-form input[value] {
   color: #ffffff;
 }
 
@@ -1015,15 +1012,15 @@ a {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.moteles-filter-container input[type="checkbox"]:checked + .checkbox-indicator{
+.moteles-filter-container input[type="checkbox"]:checked + .checkbox-indicator {
   background: url("../img/checkbox-on.svg") no-repeat ;
 }
 
-.moteles-filter-container input:disabled + .checkbox-indicator{
+.moteles-filter-container input:disabled + .checkbox-indicator {
   background: url("../img/checkbox-off-disabled.svg") no-repeat ;
 }
 
-.moteles-filter-container input:disabled:checked + .checkbox-indicator{
+.moteles-filter-container input:disabled:checked + .checkbox-indicator {
   background: url("../img/checkbox-on-disabled.svg") no-repeat ;
 }
 
@@ -1249,12 +1246,12 @@ a {
   margin-right: 5px;
 }
 
-.filter-sorting a:hover, .filter-sorting a:focus{
+.filter-sorting a:hover, .filter-sorting a:focus {
   color: #81b3d2;
   border-bottom: 1px dotted #b3d1e4;
 }
 
-.filter-sorting a:active{
+.filter-sorting a:active {
   color: black;
   border-bottom: 0;
 }
@@ -1275,7 +1272,7 @@ a {
   margin-left: 9px;
 }
 
-.filter-output-button, .filter-output-button-current{
+.filter-output-button, .filter-output-button-current {
   display: inline-block;
   
   background: none;
@@ -1289,7 +1286,7 @@ a {
   vertical-align: baseline;
 }
 
-.filter-output-button svg, .filter-output-button-current svg{
+.filter-output-button svg, .filter-output-button-current svg {
   margin: 0;
   position: absolute;
   top: 50%;
@@ -1300,20 +1297,20 @@ a {
           transform: translate(-50%, -50%);
 }
 
-.filter-output-button path{
+.filter-output-button path {
   fill: #cacaca;
 }
 
-.filter-output-button-current path{
+.filter-output-button-current path {
   fill: #81b3d2;
 }
 
-.filter-output-button path:hover{
+.filter-output-button path:hover {
  
   fill: #231f20;
 }
 
-.filter-output-button path:active{
+.filter-output-button path:active {
  
   fill: #81b3d2;
 }
@@ -1350,12 +1347,12 @@ a {
   display: flex;
 }
 
-.filter-resualt p{
+.filter-resualt p {
   padding: 0;
   margin: 0;
 }
 
-.filter-resualt h3{
+.filter-resualt h3 {
   padding: 0;
   margin: 0;
 
@@ -1412,7 +1409,7 @@ a {
   vertical-align: baseline;
 }
 
-.motel-name{
+.motel-name {
   color: #000000;
 }
 
