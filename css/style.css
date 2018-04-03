@@ -885,6 +885,10 @@ a {
   margin-top: 26px;
 }
 
+.js-modal-hide {
+  display: none;
+}
+
 .js-modal-show {
   display: block;
   
