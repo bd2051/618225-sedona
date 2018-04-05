@@ -563,6 +563,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-social li {
@@ -577,6 +579,8 @@ a {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  
+  margin-bottom: 10px;
 }
 
 .social-button:hover {
